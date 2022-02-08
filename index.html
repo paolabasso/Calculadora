@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <style>
+      body {
+        text-align: center;
+        width: 30rem;
+        border: 2px solid black;
+        padding: 2rem;
+        padding-bottom: 3rem;
+      }
+      #screen {
+        margin-bottom: 1rem;
+        margin-left: 7.5rem;
+        border: 2px solid black;
+        width: 15rem;
+        height: 3rem;
+      }
+      button {
+        padding: 0.25rem;
+        margin: 0.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Calculadora</h1></header>
+    <div id="screen"></div>
+    <div id="numberbuttons">
+      <button value="1" class="number">1</button>
+      <button value="2" class="number">2</button>
+      <button value="3" class="number">3</button>
+      <button value="4" class="number">4</button>
+      <button value="5" class="number">5</button>
+      <button value="6" class="number">6</button>
+      <button value="7" class="number">7</button>
+      <button value="8" class="number">8</button>
+      <button value="9" class="number">9</button>
+      <button value="0" class="number">0</button>
+    </div>
+    <div id="operatorbuttons">
+      <button value="+" class="operator">+</button>
+      <button value="-" class="operator">-</button>
+      <button value="*" class="operator">x</button>
+      <button value="/" class="operator">/</button>
+      <br />
+      <button value="=" class="operator">=</button>
+      <button id="cleanScreen">Limpar</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
