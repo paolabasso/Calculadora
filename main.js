@@ -1,5 +1,3 @@
-/* Quando clicar nos numeros eles serão reproduzidos na screen */
-
 const screen = document.getElementById('screen')
 const numbers = document.getElementsByClassName('number')
 const operators = document.getElementsByClassName('operator')
@@ -8,7 +6,6 @@ const clean = document.getElementById('cleanScreen')
 let value1 = null
 let operator = ''
 
-// fazer a função do click ser "imprimir" o valor do botao clicado
 //currentTarget pega o objeto que disparou o evento
 function imprimir(evento) {
   if (operator != '') {
@@ -17,7 +14,6 @@ function imprimir(evento) {
   screen.innerText = `${screen.innerText}${evento.currentTarget.value}`
 }
 
-//adicionando o evento click em todos os botões de numeros
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener('click', imprimir)
 }
